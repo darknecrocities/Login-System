@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function() {
         alert("Signed up successfully!");
         // Here you would normally send the signup data to the server
         // For demonstration, redirect to the login page
-        window.location.href = 'login.html';
+        window.location.href = 'index.html';
         return true;
     };
 });
