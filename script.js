@@ -59,6 +59,13 @@ document.addEventListener("DOMContentLoaded", function() {
             return false;
         }
 
+        // Password validation: at least 6 characters, includes a number and a special character
+        const passwordPattern = /^(?=.*[0-9])(?=.*[!@#$%^&*])[A-Za-z0-9!@#$%^&*]{6,}$/;
+        if (!passwordPattern.test(password)) {
+            alert("Password must be at least 6 characters long and include at least one number and one special character.");
+            return false;
+        }
+
         // Retrieve user database from localStorage
         const userDatabase = JSON.parse(localStorage.getItem('userDatabase'));
 
