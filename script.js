@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         alert("Logged in successfully!");
         // Redirect to welcome page
-        window.location.href = 'welcome.html';
+        window.location.href = 'index3.html';
         return true;
     };
 
